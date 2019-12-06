@@ -1,0 +1,40 @@
+
+package com.tahirabuzetoglu.mavenproject5;  //Burası değişecek ,sizde farklı olacaktır package ismi
+
+public class Main {
+    public static void main(String[] args) {
+        
+        //Integer tipindeki değişkenler tam sayıları tutar 
+        int x = 12; 
+        
+        //Float tipindeki değişkenler ondalıklı sayıları tutar 
+        float y = (float)12.02; 
+        
+        //Char tipindeki değişkenler karakterleri  tutar 
+        char a = 't'; 
+        
+        //String yapısı cümle, kelime veya sayı alabilir, fakat sayılarla işlem yapamaz
+        String kelime = "Anahtar";
+        String sayi = "3"; //Bu sayı ile +,-,*,/ işlemleri yapılamaz.
+        String cumle ="BU bir  cümledir";
+       
+        
+        //Diziler aynı türden verileri tutar, biz burada int kullandık fakat char,float,string olabilir
+        int[] dizim = new int[5];
+        dizim[0] = 12;
+        dizim[1] = 13;
+        dizim[2] = 15;
+        dizim[3] = 123;
+        dizim[4] = 67;
+        
+        //Döngüleri aynı tipteki işlemleri tekrarlı olarak yapmamızı sağlar
+        for(int i=0; i<5;i++){
+            //Koşul yapısı 
+            if(i != 3){ //Burda eğer i 3'e eşit değilse ekrana yazdır diyoruz.
+                System.out.println("index = " + i + " degeri = " + dizim[i]);
+            }
+     
+        }
+     
+    }
+}
